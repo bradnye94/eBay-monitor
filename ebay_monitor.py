@@ -9,7 +9,7 @@ NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "ebay-alerts-x7f2k9")
 
 SEARCHES = [
     {
-        "keywords": "vintage oil can",
+        "keywords": "oil can",
         "min_price": None,
         "max_price": None,
         "condition": None,
