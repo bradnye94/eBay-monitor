@@ -54,7 +54,7 @@ def search_ebay(token, search):
     if search.get("min_price") is not None or search.get("max_price") is not None:
         lo = search.get("min_price", "")
         hi = search.get("max_price", "")
-        filters.append(f"price:[{lo}..{hi}],priceCurrency:USD")
+        filters.append(f"price:[{lo}..{hi}],priceCurrency:GBP")
     if search.get("condition"):
         filters.append(f"conditions:{{{search['condition']}}}")
     if filters:
@@ -66,7 +66,7 @@ def search_ebay(token, search):
         EBAY_SEARCH_URL,
         headers={
             "Authorization": f"Bearer {token}",
-            "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+            "X-EBAY-C-MARKETPLACE-ID": "EBAY_GB",
         },
         params=params,
         timeout=15,
