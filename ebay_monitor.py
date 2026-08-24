@@ -3,13 +3,13 @@ import json
 import requests
 from pathlib import Path
 
-CLIENT_ID = os.environ.get("EBAY_CLIENT_ID", "YOUR_CLIENT_ID_HERE")
-CLIENT_SECRET = os.environ.get("EBAY_CLIENT_SECRET", "YOUR_CLIENT_SECRET_HERE")
-NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "YOUR_NTFY_TOPIC_HERE")
+CLIENT_ID = os.environ.get("EBAY_CLIENT_ID", "BradleyN-listingm-PRD-e254d2f41-a69abcac")
+CLIENT_SECRET = os.environ.get("EBAY_CLIENT_SECRET", "PRD-254d2f41e7a7-5468-4ecf-8e46-f8d8")
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "ebay-alerts-x7f2k9")
 
 SEARCHES = [
     {
-        "keywords": "vintage nikon f3",
+        "keywords": "vintage oil can",
         "min_price": None,
         "max_price": None,
         "condition": None,
