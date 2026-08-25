@@ -1,8 +1,10 @@
 name: eBay Monitor
 on:
   schedule:
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
+       - cron: '*/5 * * * *'
+     workflow_dispatch:
+     repository_dispatch:
+       types: [trigger-monitor]
 jobs:
   check:
     runs-on: ubuntu-latest
