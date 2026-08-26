@@ -26,7 +26,7 @@ SEARCHES = [
         "keywords": "oil pourer",
         "min_price": None,
         "max_price": None,
-        "condition": None,
+        "condition": "USED",
         "category_id": None,
     },
 ]
