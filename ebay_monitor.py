@@ -15,6 +15,20 @@ SEARCHES = [
         "condition": None,
         "category_id": None,
     },
+    {
+        "keywords": "oil tin",
+        "min_price": None,
+        "max_price": None,
+        "condition": None,
+        "category_id": None,
+    },
+    {
+        "keywords": "oil pourer",
+        "min_price": None,
+        "max_price": None,
+        "condition": None,
+        "category_id": None,
+    },
 ]
 
 SEEN_FILE = Path("seen_items.json")
