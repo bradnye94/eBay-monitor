@@ -1,7 +1,7 @@
 name: eBay Monitor
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/2 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [trigger-monitor]
